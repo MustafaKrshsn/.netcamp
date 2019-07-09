@@ -1,0 +1,11 @@
+﻿@model List< NetCampWeb.Models.Entities.Ogrenci>
+@{
+    ViewData["Title"] = "Öğrenci Listesi";
+}
+
+<h2>Öğrenci Listesi </h2>
+
+@foreach(var item in Model)
+{
+    <p>@item.Id @item.Adi @item.Soyadi @item.Yasi</p>
+}
